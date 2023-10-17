@@ -55,6 +55,20 @@ section {
 .search input:hover{
     border: 1px solid #40a9ff;
 }
+.input-form input{
+    height: 40px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #e3e3e3;
+    width: 100%;
+}
+.input-form input:focus{
+    border: 1px solid #40a9ff;
+    box-shadow: 0 1px 2px 0px #40a9ff;
+}
+.input-form input:hover{
+    border: 1px solid #40a9ff;
+}
 .select-option select{
     max-height: 32px;
     padding: 4px;
@@ -107,11 +121,22 @@ section {
     gap: 6px;
     justify-content: end;
 }
+.pagination strong{
+    padding: 2px 8px;
+    text-decoration: none;
+    border: 1px solid #e3e3e3;
+}
+.pagination strong{
+    color: #40a9ff;
+    border: 1px solid #40a9ff;
+}
+
 .pagination a {
     
     padding: 2px 8px;
     text-decoration: none;
     border: 1px solid #e3e3e3;
+    
 }
 .pagination a.active {
     
@@ -125,4 +150,45 @@ section {
 }
 .menu-opened{
     left: 0 !important;
+}
+.option select{
+    height: 40px;
+    padding: 4px;
+    outline: none;
+    border: 1px solid #e3e3e3;
+    width: 100%;
+    border-radius: 2px;
+}
+.option select:focus{
+    border: 1px solid #40a9ff;
+    box-shadow: 0 1px 2px 0px #40a9ff;
+}
+.option select:hover{
+    border: 1px solid #40a9ff;
+}
+
+.table-ds tr{
+    border-bottom: 1px solid #e3e3e3;
+
+}
+.table-ds tr td{
+    padding: 16px;
+}
+.btn-tab button:focus{
+    background-color: #3b82f6;
+    color: white;
+}
+.copy input{
+    padding: 12px 8px;
+    max-height: 40px;
+    width: 75%;
+    border: 1px solid #e3e3e3;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.copy input:focus{
+    border: 1px solid #40a9ff;
+    box-shadow: 0 1px 2px 0px #40a9ff;
+
 }
