@@ -73,7 +73,7 @@
                         <p class="mx-3">Tiếp thị liên kết</p>
                     </a>
                     <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="#">
+                        href="setting.html">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/setting.png);"></div>
                         <p class="mx-3">Cài đặt tài khoản</p>
@@ -120,7 +120,7 @@
                         <p class="mx-3">Tiếp thị liên kết</p>
                     </a>
                     <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="setting.html">
+                        href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/setting.png);"></div>
                         <p class="mx-3">Cài đặt tài khoản</p>
@@ -139,124 +139,33 @@
                         <button class="px-2 py-1 border text-white bg-[#40a9ff] rounded " onclick="toggleMenu()"
                             id="overlay">menu</button>
                     </div>
-                    <div class="flex items-center mb-5 mx-4 justify-between">
-                        <div class="flex items-center">
-                            <div class="bg-no-repeat bg-contain"
-                                style="background-image: url(./image/clock.png); width: 20px; height: 20px; ">
+                    <div class="flex items-center gap-2">
+                        <a href="index.html" class="">
+                            <div class="bg-no-repeat bg-contain  "
+                                style="background-image: url(./image/back-button.png); width: 32px; height: 32px;">
+
                             </div>
-                            <p class="text-[20px] font-bold mx-2 text-[#555555]">Lịch sử rút tiền</p>
+                        </a>
+                        <div class="font-bold text-lg">
+                            giao dịch#12456
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 mt-3">
+                        <div class="flex flex-col border rounded bg-[#ffffff] text-gray-500 font-medium text-sm">
+                            <div class="border-b mx-2 py-2">Thông tin giao dịch</div>
+                            <div class="border-b mx-2 py-[10px] ">Số tiền : <span class="text-base text-red-500 font-bold">3000000đ</span></div>
+                            <div class="border-b mx-2 py-[10px]">Loại giao dịch : <span class=" text-base font-bold text-black">Mua combo</span></div>
+                            <div class="border-b mx-2 py-[10px]">Trạng thái : <span class="font-bold text-base text-black">hủy</span></div>
+                            <div class="border-b mx-2 py-[10px]">Hình thức thanh toán : <span class="font-bold text-base text-black">chuyển khoản</span></div>
+                            <div class="border-b mx-2 py-[10px]">Ngày hủy : <span class="font-bold text-base text-black">5-10-2023 - 14:20:00</span> </div>
+                            <div class="border-b mx-2 py-[10px]">Ngày tạo : <span class="font-bold text-base text-black">5-10-2023 - 14:20:00</span> </div>
+
+
                         </div>
 
 
                     </div>
-                    <div class="border bg-[#ffffff] mt-5 lg:ml-4">
 
-
-                        <div class="border-b text-sm px-[10px] py-2">
-                            Lịch sử hoa hồng
-                        </div>
-
-
-                        <form action="">
-                            <div class="flex flex-row flex-wrap mt-5 gap-y-3">
-                                <div class="lg:w-1/3 w-full px-[10px]">
-                                    <div class="flex items-center ">
-
-                                        <span class="search w-full">
-                                            <input type="text" placeholder="Tìm kiếm "
-                                                class="rounded-tl-[2px] rounded-bl-[2px]">
-                                        </span>
-                                        <button class="border max-h-8 p-2 rounded-tr-[2px] rounded-br-[2px]">
-                                            <div class="bg-no-repeat bg-contain "
-                                                style="background-image: url(./image/searchh.png); width: 16px; height: 16px;">
-                                            </div>
-                                        </button>
-
-                                    </div>
-                                </div>
-                                <div class="lg:w-1/3 w-full px-[10px]">
-                                    <div class="select-option ">
-                                        <select name="" id="">
-                                            <option value="">Tất cả trạng thái</option>
-                                            <option value="">Duyệt</option>
-                                            <option value="">Hủy</option>
-                                            <option value="">Chờ xác nhận </option>
-                                            <option value="">Chờ thanh toán</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="lg:w-1/3 w-full px-[10px]">
-                                    <div class="flex items-center ">
-                                        <span class="search w-full">
-                                            <input type="date" placeholder="" class="rounded-sm">
-                                        </span>
-
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-                        </form>
-
-                        <div class="overflow-x-auto table-scroll py-2 mx-2 ">
-                            <table class="lg:w-[120%] w-[250%] table-auto border-collapse scrol" id="myTable">
-                                <tr>
-                                    <th></th>
-                                    <th>ID</th>
-                                    <th>Tiền</th>
-                                    <th>Điểm</th>
-                                    <th>Loại giao dịch</th>
-                                    <th>Ví</th>
-                                    <th>Trạng thái</th>
-                                    <th>Ngày tháng</th>
-                                </tr>
-                                <tr>
-                                    <td><a href="" class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
-                                    <td>97978</td>
-                                    <td>+50đ</td>
-                                    <td></td>
-                                    <td>Hoa hồng tương trợ</td>
-                                    <td>Vi tiền thưởng</td>
-                                    <td>Hoàn thành</td>
-                                    <td>16/10/2023-08:00:00</td>
-
-                                </tr>
-                                <tr>
-                                    <td><a href="" class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
-                                    <td>97977</td>
-                                    <td>+51đ</td>
-                                    <td></td>
-                                    <td>Hoa hồng tương trợ</td>
-                                    <td>Vi tiền thưởng</td>
-                                    <td>Hoàn thành</td>
-                                    <td>15/10/2023-08:00:00</td>
-
-                                </tr>
-                                <tr>
-                                    <td><a href="" class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
-                                    <td>97976</td>
-                                    <td>+52đ</td>
-                                    <td></td>
-                                    <td>Hoa hồng tương trợ</td>
-                                    <td>Vi tiền thưởng</td>
-                                    <td>Hoàn thành</td>
-                                    <td>14/10/2023-08:00:00</td>
-
-                                </tr>
-
-                            </table>
-                        </div>
-                        <div class="pagination my-5">
-                            <a href="">
-                                < </a>
-                                    <strong>1</strong>
-                                    <a href="">></a>
-                        </div>
-
-
-                    </div>
 
                 </div>
             </div>

@@ -152,3 +152,8 @@ function copyText() {
 //     content.classList.add("hidden");
 //   }
 // });
+
+//show form
+// Lấy tham chiếu đến nút và lớp content
+
+

@@ -73,7 +73,7 @@
                         <p class="mx-3">Tiếp thị liên kết</p>
                     </a>
                     <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="">
+                        href="setting.html">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/setting.png);"></div>
                         <p class="mx-3">Cài đặt tài khoản</p>
@@ -218,57 +218,60 @@
                         <div class="border-b text-sm px-[10px] py-2">
                             Danh sách giao dịch
                         </div>
-                        <div class="flex flex-row flex-wrap mt-5 gap-y-3">
-                            <div class="lg:w-1/2 w-full px-[10px]">
-                                <div class="flex items-center ">
-                                    <span class="search w-full">
-                                        <input type="text" placeholder="Tìm kiếm "
-                                            class="rounded-tl-[2px] rounded-bl-[2px]">
-                                    </span>
-                                    <button class="border max-h-8 p-2 rounded-tr-[2px] rounded-br-[2px]">
-                                        <div class="bg-no-repeat bg-contain "
-                                            style="background-image: url(./image/searchh.png); width: 16px; height: 16px;">
-                                        </div>
-                                    </button>
+                        <form action="">
+                            <div class="flex flex-row flex-wrap mt-5 gap-y-3">
+                                <div class="lg:w-1/2 w-full px-[10px]">
+                                    <div class="flex items-center ">
+                                        <span class="search w-full">
+                                            <input type="text" placeholder="Tìm kiếm "
+                                                class="rounded-tl-[2px] rounded-bl-[2px]">
+                                        </span>
+                                        <button class="border max-h-8 p-2 rounded-tr-[2px] rounded-br-[2px]">
+                                            <div class="bg-no-repeat bg-contain "
+                                                style="background-image: url(./image/searchh.png); width: 16px; height: 16px;">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="lg:w-1/2 w-full px-[10px]">
-                                <div class="select-option ">
-                                    <select name="" id="">
-                                        <option value="">Tất cả trạng thái</option>
-                                        <option value="">Duyệt</option>
-                                        <option value="">Hủy</option>
-                                        <option value="">Chờ xác nhận </option>
-                                        <option value="">Chờ thanh toán</option>
-                                    </select>
+                                <div class="lg:w-1/2 w-full px-[10px]">
+                                    <div class="select-option ">
+                                        <select name="" id="">
+                                            <option value="">Tất cả trạng thái</option>
+                                            <option value="">Duyệt</option>
+                                            <option value="">Hủy</option>
+                                            <option value="">Chờ xác nhận </option>
+                                            <option value="">Chờ thanh toán</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="lg:w-1/2 w-full px-[10px]">
-                                <div class="select-option ">
-                                    <select name="" id="">
-                                        <option value="">Tất cả các loại</option>
-                                        <option value="">Hoa hồng trực tiếp </option>
-                                        <option value="">Doanh số nhóm </option>
-                                        <option value="">Mua gói </option>
-                                        <option value="">mua combo</option>
-                                    </select>
+                                <div class="lg:w-1/2 w-full px-[10px]">
+                                    <div class="select-option ">
+                                        <select name="" id="">
+                                            <option value="">Tất cả các loại</option>
+                                            <option value="">Hoa hồng trực tiếp </option>
+                                            <option value="">Doanh số nhóm </option>
+                                            <option value="">Mua gói </option>
+                                            <option value="">mua combo</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="lg:w-1/2 w-full px-[10px]">
-                                <div class="flex items-center ">
-                                    <span class="search w-full">
-                                        <input type="date" placeholder="Tìm kiếm " class="rounded-sm">
-                                    </span>
+                                <div class="lg:w-1/2 w-full px-[10px]">
+                                    <div class="flex items-center ">
+                                        <span class="search w-full">
+                                            <input type="date" placeholder="Tìm kiếm " class="rounded-sm">
+                                        </span>
 
+                                    </div>
                                 </div>
+                                <div class="text-sm px-[10px] py-2">
+                                    Tổng : <span class="text-[#6BAC1C] ">10,000,000đ</span>
+                                </div>
+
+
+
                             </div>
-                            <div class="text-sm px-[10px] py-2">
-                                Tổng : <span class="text-[#6BAC1C] ">10,000,000đ</span>
-                            </div>
+                        </form>
 
-
-
-                        </div>
                         <div class="overflow-x-auto table-scroll py-2 mx-2">
                             <table class="lg:w-[120%] w-[250%] table-auto border-collapse scrol " id="myTable">
                                 <tr>
@@ -282,7 +285,8 @@
                                     <th>Ngày tháng</th>
                                 </tr>
                                 <tr>
-                                    <td><a href="" class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
+                                    <td><a href="transaction.html"
+                                            class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
                                     <td>97978</td>
                                     <td>+50đ</td>
                                     <td></td>
@@ -293,7 +297,8 @@
 
                                 </tr>
                                 <tr>
-                                    <td><a href="" class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
+                                    <td><a href="transaction.html"
+                                            class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
                                     <td>97977</td>
                                     <td>+51đ</td>
                                     <td></td>
@@ -304,7 +309,8 @@
 
                                 </tr>
                                 <tr>
-                                    <td><a href="" class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
+                                    <td><a href="transaction.html"
+                                            class="px-2 py-1 text-white rounded bg-blue-500">xem</a></td>
                                     <td>97976</td>
                                     <td>+52đ</td>
                                     <td></td>

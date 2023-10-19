@@ -1,11 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600&family=Open+Sans:wght@500;600;700&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <section>
+        <div class="container mx-auto ">
+            <div class="mt-10 flex ">
+                <div
+                    class="hidden lg:w-1/4 border lg:flex flex-col  text-[#3f4858] py-4 px-2 bg-[#ffffff] shadow-md mx-4 self-start">
+                    <div class="flex justify-center ">
+                        <div class="bg-no-repeat bg-cover"
+                            style="display: flex; justify-content: center; width: 56px; height: 56px; background-image: url(./image/familyy.png);">
+                        </div>
+                    </div>
+
+                    <p class="text-center font-medium">An lộc thịnh vương</p>
+                    <div
+                        class="flex space-x-2 items-center bg-[#6bac1c] justify-center text-white px-2 py-1 text-sm rounded-full mb-4">
+                        <div class="bg-no-repeat bg-cover  "
+                            style=" width: 16px; height: 16px; background-image: url(./image/verified.png);">
+                        </div>
+                        <p>Vàng - 42 hộp</p>
+                    </div>
+                    <a class="flex hover:text-blue-500 px-4 py-2 items-center mb-2 rounded-md cursor-pointer bg-link"
+                        href="index.html">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/dashboard1.png);"></div>
+                        <p class="mx-3">Dashboard</p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="buy-combo.html">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/moneyblack.png);"></div>
+                        <p class="mx-3">Đơn hàng của tôi </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="withdraw.html">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/cash-withdrawa.png);">
+                        </div>
+                        <p class="mx-3">Lịch sử rút tiền </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link transition-all"
+                        href="commissions.html">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/clock.png);"></div>
+                        <p class="mx-3">Lịch sử hoa hồng </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="system.html">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/group.png);"></div>
+                        <p class="mx-3">Danh sách thành viên </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="affiliate.html">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/affiliate-marketing.png);">
+                        </div>
+                        <p class="mx-3">Tiếp thị liên kết</p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/setting.png);"></div>
+                        <p class="mx-3">Cài đặt tài khoản</p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/log-out.png);"></div>
+                        <p class="mx-3">Đăng xuất</p>
+                    </a>
+                </div>
+                <div class="lg:hidden flex flex-col fixed bg-white sm:w-[80%] w-[70%] left-[-100%]  h-full top-0 "
+                    id="menu">
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/moneyblack.png);"></div>
+                        <p class="mx-3">Đơn hàng của tôi </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/cash-withdrawa.png);">
+                        </div>
+                        <p class="mx-3">Lịch sử rút tiền </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/clock.png);"></div>
+                        <p class="mx-3">Lịch sử hoa hồng </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/group.png);"></div>
+                        <p class="mx-3">Danh sách thành viên </p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/affiliate-marketing.png);">
+                        </div>
+                        <p class="mx-3">Tiếp thị liên kết</p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/setting.png);"></div>
+                        <p class="mx-3">Cài đặt tài khoản</p>
+                    </a>
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link tran"
+                        href="#">
+                        <div class="bg-no-repeat bg-contain "
+                            style="width: 22px; height: 22px; background-image: url(./image/log-out.png);"></div>
+                        <p class="mx-3">Đăng xuất</p>
+                    </a>
+                </div>
+
+                <div class="lg:w-3/4 w-full self-stretch">
+                    <div class="lg:hidden flex justify-end
+                    ">
+                        <button class="px-2 py-1 border text-white bg-[#40a9ff] rounded " onclick="toggleMenu()"
+                            id="overlay">menu</button>
+                    </div>
+                    <div class="flex items-center mb-5 mx-4">
+                        <div class="bg-no-repeat bg-contain"
+                            style="background-image: url(./image/setting.png); width: 20px; height: 20px; ">
+                        </div>
+                        <p class="text-[20px] font-bold mx-2 text-[#555555]">Cài đặt tài khoản</p>
+                    </div>
+                    <form action="">
+                        <div class="flex lg:flex lg:flex-row flex-col">
+
+
+                            <div class="lg:w-1/2 w-full">
+                                <div class="border lg:ml-4 lg:mr-2 mx-2 px-2 bg-[#ffffff] rounded">
+                                    <p class="border-b py-2">Thông tin cá nhân </p>
+                                    <div class="flex flex-col gap-y-5 my-4">
+                                        <div class="img-setting">
+                                            <img src="./image/family-room.png" alt="">
+                                        </div>
+                                        <div class="input_setting w-full">
+                                            <p><span class="text-red-500">*</span>Họ và tên </p>
+                                            <input type="text" value="An Lộc Thịnh Vương">
+                                        </div>
+                                        <div class="input_setting w-full">
+                                            <p>CMND/CCCD </p>
+                                            <input type="number" value="0123456789">
+                                        </div>
+                                        <div class="input_setting w-full">
+                                            <p>Email </p>
+                                            <input type="email" value="An Lộc Thịnh Vương">
+                                        </div>
+                                        <div class="input_setting w-full">
+                                            <p><span class="text-red-500">*</span>Số điện thoại </p>
+                                            <input type="number" value="0989999999">
+                                        </div>
+                                        <div class="input_setting w-full">
+                                            <p>Công ty </p>
+                                            <input type="text" value="An Lộc hodings">
+                                        </div>
+                                        <div class="input_setting w-full">
+                                            <p>Mật khẩu </p>
+                                            <input type="password" value="">
+                                            <p class="text-sm text-[#bababa]">Chỉ nhập vào nếu muốn thay đổi mật khẩu
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="bg-[#ffffff] border lg:mx-4 mx-2 px-2 mt-5 rounded">
+                                    <p class="border-b py-2">Thông tin nhận hàng </p>
+                                    <div class="flex flex-col gap-y-5 my-4">
+                                        <div class="option">
+                                            <p class="pb-1"><span class="text-red-500">*</span>Tỉnh/thành phố </p>
+                                            <select name="" id="">
+                                                <option value="">Hà nội</option>
+                                                <option value="">Thái bình </option>
+                                                <option value="">Hải phòng </option>
+                                                <option value="">Hưng yên </option>
+                                                <option value="">Bắc ninh</option>
+                                            </select>
+                                        </div>
+                                        <div class="option">
+                                            <p class="pb-1"><span class="text-red-500">*</span>Quận/huyện </p>
+                                            <select name="" id="">
+                                                <option value="">Ninh giang</option>
+                                                <option value="">Thanh miện </option>
+                                                <option value="">Thanh Hà </option>
+                                                <option value="">Tứ kỳ </option>
+                                                <option value="">Gia lộc</option>
+                                            </select>
+                                        </div>
+                                        <div class="option">
+                                            <p class="pb-1"><span class="text-red-500">*</span>Xã/phường/thị trấn </p>
+                                            <select name="" id="">
+                                                <option value="">Ninh hải</option>
+                                                <option value="">Hồng Phong </option>
+                                                <option value="">Kiến Quốc</option>
+                                                <option value="">Tân hương </option>
+                                                <option value="">Ninh thành</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-form">
+                                            <p class="pb-1"><span class="text-red-500">*</span>Số nhà , tên đường</p>
+                                            <input type="text">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="m-4">
+                                    <button class="py-2 px-3 bg-blue-500 text-white  rounded text-sm">Lưu Lại</button>
+                                </div>
+
+                            </div>
+                            <div class="lg:w-1/2 w-full">
+                                <div class="bg-[#ffffff] border mx-2 px-2  rounded">
+                                    <p class="border-b py-2">Thông tin nhận tiền </p>
+                                    <div class="flex flex-col gap-y-5 my-4 pb-4">
+                                        <div class="option">
+                                            <p class="pb-1">Ngân hàng </p>
+                                            <select name="" id="">
+                                                <option value="">BIDV - Ngân hàng TMCP Đầu tư và Phát triển Việt Nam
+                                                </option>
+                                                <option value="">VBA - Ngân hàng Nông nghiệp và Phát triển Nông thôn
+                                                    Việt
+                                                    Nam </option>
+                                                <option value="">OCB - Ngân hàng TMCP Phương Đông </option>
+                                                <option value="">MB - Ngân hàng TMCP Quân đội </option>
+                                                <option value="">ACB - Ngân hàng TMCP Á Châu</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-form">
+                                            <p class="pb-1">Chủ tài khoản</p>
+                                            <input type="text" value="Nguyễn Văn A">
+                                        </div>
+                                        <div class="input-form">
+                                            <p class="pb-1">Số tài khoản</p>
+                                            <input type="number" value="9837466283">
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="border bg-[#ffffff] rounded mx-2 px-2 mt-5 mb-4">
+                                    <p class="border-b py-2">Mật khẩu cấp 2</p>
+                                    <div class="my-3 ">
+                                        <p class="text-sm">Mật khẩu cấp 2 đã được cài đặt, nhấn vào nút bên dưới nếu
+                                            muốn
+                                            thay đổi mật khẩu cấp 2.</p>
+                                        <button
+                                            class="bg-red-500 hover:bg-red-400 text-white px-3 py-[6px] rounded mt-3 text-sm"
+                                            id="showButton">Thay
+                                            đổi mật khẩu cấp 2</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <div class="rounded  w-full fixed left-0 top-0 bottom-0 right-0 overflow-auto z-10 bg-opacity-50 bg_form hidden"
+            id="background">
+        </div>
+        <div class="">
+            <form action="">
+                <div class="fixed  lg:left-1/3 top-[20%] hidden z-20 input_w " id="form">
+                    <div class="w-[520px] h-full bg-[#ffffff] rounded ml-2  " style="max-width: calc(100vw - 16px);">
+                        <div class="border rounded p-3">
+                            <div class="flex justify-between items-center border-b pb-2">
+                                <p>Đổi mật khẩu cấp 2</p>
+                                <div class="bg-no-repeat bg-contain"
+                                    style="background-image: url(./image/closee.png); width: 16px; height: 16px;"
+                                    id="closeButton"></div>
+                            </div>
+                            <div class="flex flex-col gap-y-8 mt-5">
+                                <div class="input-form">
+                                    <p class="pb-1"><span class="text-red-500">*</span>Mật khẩu cấp 2 mới </p>
+                                    <input type="password">
+                                </div>
+                                <div class="input-form">
+                                    <p class="pb-1"><span class="text-red-500">*</span>Nhập lại mật khẩu cấp 2</p>
+                                    <input type="password">
+                                </div>
+                                <div class="input-form">
+                                    <p class="pb-1"><span class="text-red-500">*</span>Mật khẩu cấp 2 cũ</p>
+                                    <input type="password">
+                                </div>
+                                <div>
+                                    <button class="text-white p-2 bg-blue-500 rounded">Xác Nhận</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="showHidden.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
