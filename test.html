@@ -1,197 +1,52 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./dist/output.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <section>
-        <input type="text">
-        <button>Đặt mua combo</button>
-    </section>
-    <section class="">
-        <div class="rounded  w-full fixed left-0 top-0 bottom-0 right-0 overflow-auto z-10 bg-opacity-50 bg_form hidden"
-            id="background">
-        </div>
-        <div class="absolute  top-0 left-0 right-0 bottom-0  h-full z-50" id="content">
-            <div class="bg-[#ffffff] mt-5 w-[520px] ">
-                <div class="flex justify-between items-center border-b py-2 px-3">
-                    <p>Mua combo</p>
-                    <div class="bg-no-repeat bg-contain "
-                        style="background-image: url(./image/closee.png); width: 16px; height: 16px;">
-
-                    </div>
-                </div>
-                <div class="flex p-6 flex-row flex-wrap gap-y-5">
-                    <div class="px-2 h-full max-w-[50%] ">
-                        <div class="border bg-gray-100 px-3 py-2 rounded ClickMuahang  relative">
-
-                            <p class="text-[#3b82f6] text-base font-bold">Vàng - 42 Hộp Heaso Nutri 400g
-                                hoặc 24
-                                Hộp Heaso Nutri 800g</p>
-                            <p class="text-[#3b82f6] text-base font-bold">21,840,000đ</p>
-                            <p class="text-sm text-[#3b82f6] ">Tặng <span class="text-red-500">30,000ASP</span>
-                            </p>
-                            <div class="bg-no-repeat bg-contain absolute -top-2 -right-2 hidden "
-                                style="background-image: url(./image/check.png); width: 22.75px; height: 22.75px; "
-                                id="icon-right">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="px-2 h-full max-w-[50%] ">
-                        <div class="border bg-gray-100 px-3 py-2 rounded ClickMuahang  relative">
-
-                            <p class="text-[#3b82f6] text-base font-bold">Vàng - 42 Hộp Heaso Nutri 400g
-                                hoặc 24
-                                Hộp Heaso Nutri 800g</p>
-                            <p class="text-[#3b82f6] text-base font-bold">21,840,000đ</p>
-                            <p class="text-sm text-[#3b82f6] ">Tặng <span class="text-red-500">30,000ASP</span>
-                            </p>
-                            <div class="bg-no-repeat bg-contain absolute -top-2 -right-2 hidden "
-                                style="background-image: url(./image/check.png); width: 22.75px; height: 22.75px; "
-                                id="icon-right">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-2 h-full max-w-[50%] ">
-                        <div class="border bg-gray-100 px-3 py-2 rounded ClickMuahang  relative">
-
-                            <p class="text-[#3b82f6] text-base font-bold">Vàng - 42 Hộp Heaso Nutri 400g
-                                hoặc 24
-                                Hộp Heaso Nutri 800g</p>
-                            <p class="text-[#3b82f6] text-base font-bold">21,840,000đ</p>
-                            <p class="text-sm text-[#3b82f6] ">Tặng <span class="text-red-500">30,000ASP</span>
-                            </p>
-                            <div class="bg-no-repeat bg-contain absolute -top-2 -right-2 hidden "
-                                style="background-image: url(./image/check.png); width: 22.75px; height: 22.75px; "
-                                id="icon-right">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-2 h-full max-w-[50%]  ">
-                        <div class="border bg-gray-100 px-3 py-2 rounded ClickMuahang  relative ">
-
-                            <p class="text-[#3b82f6] text-base font-bold">Vàng - 42 Hộp Heaso Nutri 400g
-                                hoặc 24
-                                Hộp Heaso Nutri 800g</p>
-                            <p class="text-[#3b82f6] text-base font-bold">21,840,000đ</p>
-                            <p class="text-sm text-[#3b82f6] ">Tặng <span class="text-red-500">30,000ASP</span>
-                            </p>
-                            <div class="bg-no-repeat bg-contain absolute -top-2 -right-2 hidden "
-                                style="background-image: url(./image/check.png); width: 22.75px; height: 22.75px; "
-                                id="icon-right">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form action="">
-                    <div class="flex flex-col p-6 gap-y-5">
-                        <div class="option">
-                            <p class="pb-1"><span class="text-red-500">*</span>Tỉnh/thành phố </p>
-                            <select name="" id="">
-                                <option value="">Hà nội</option>
-                                <option value="">Thái bình </option>
-                                <option value="">Hải phòng </option>
-                                <option value="">Hưng yên </option>
-                                <option value="">Bắc ninh</option>
-                            </select>
-                        </div>
-                        <div class="option">
-                            <p class="pb-1"><span class="text-red-500">*</span>Quận/huyện </p>
-                            <select name="" id="">
-                                <option value="">Ninh giang</option>
-                                <option value="">Thanh miện </option>
-                                <option value="">Thanh Hà </option>
-                                <option value="">Tứ kỳ </option>
-                                <option value="">Gia lộc</option>
-                            </select>
-                        </div>
-                        <div class="option">
-                            <p class="pb-1"><span class="text-red-500">*</span>Xã/phường/thị trấn </p>
-                            <select name="" id="">
-                                <option value="">Ninh hải</option>
-                                <option value="">Hồng Phong </option>
-                                <option value="">Kiến Quốc</option>
-                                <option value="">Tân hương </option>
-                                <option value="">Ninh thành</option>
-                            </select>
-                        </div>
-                        <div class="input-form">
-                            <p class="pb-1"><span class="text-red-500">*</span>Số nhà , tên đường</p>
-                            <input type="text" class="h-10">
-                        </div>
-                        <button class="border text-white bg-red-500 rounded px-3 py-2 w-1/3">
-                            đặt mua
-                        </button>
-                    </div>
-                </form>
-
-            </div>
-        </div>
-    </section>
-</body>
-
-</html> -->
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    .block {
-      width: 200px;
-      height: 100px;
-      background-color: #ccc;
-      margin: 10px;
-      cursor: pointer;
-      text-align: center;
-      padding: 10px;
-    }
-
-    .icon {
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="block" id="block1">Block 1
-    <div class="icon">Icon 1</div>
-  </div>
-  <div class="block" id="block2">Block 2
-    <div class="icon">Icon 2</div>
-  </div>
-  <div class="block" id="block3">Block 3
-    <div class="icon">Icon 3</div>
-  </div>
-
-  <script>
-    const blocks = document.querySelectorAll(".block");
-    let visibleIcon = null; // Lưu trữ icon đang hiển thị
-
-    blocks.forEach((block) => {
-      block.addEventListener("click", function () {
-        const icon = block.querySelector(".icon");
-
-        // Ẩn icon hiện tại (nếu có)
-        if (visibleIcon) {
-          visibleIcon.style.display = "none";
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        .datepicker-container {
+            display: flex;
+            align-items: center;
         }
 
-        // Hiển thị icon trong khối hiện tại
-        icon.style.display = "block";
+        .datepicker-input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
 
-        // Cập nhật biến visibleIcon với icon mới hiển thị
-        visibleIcon = icon;
-      });
-    });
-  </script>
+        .datepicker-icon {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="datepicker-container">
+        <input type="text" id="start-date" class="datepicker-input" placeholder="Ngày bắt đầu">
+        <input type="text" id="end-date" class="datepicker-input" placeholder="Ngày kết thúc">
+        <span class="datepicker-icon" id="datepicker-icon">&#128197</span>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#start-date").datepicker();
+            $("#end-date").datepicker();
+
+            $("#datepicker-icon").click(function() {
+                $("#start-date").datepicker("show");
+            });
+            
+            $("#datepicker-icon").click(function() {
+                $("#end-date").datepicker("show");
+            });
+        });
+    </script>
 </body>
 </html>

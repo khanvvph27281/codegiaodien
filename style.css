@@ -243,3 +243,17 @@ section {
     border: 1px solid #3b82f6;
     
 }
+.clicked{
+    background-color: #40a9ff;
+    transition: background-color 0.3s ease;
+}
+
+.datepicker-input{
+    max-width: 40%;
+    outline: none;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 4px;
+
+}
+

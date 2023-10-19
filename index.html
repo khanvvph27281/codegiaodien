@@ -9,9 +9,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600&family=Open+Sans:wght@500;600;700&family=Roboto&display=swap"
         rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="test.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#start-date").datepicker();
+                $("#end-date").datepicker();
+    
+                $("#datepicker-icon").click(function() {
+                    $("#start-date").datepicker("show");
+                });
+                
+                $("#datepicker-icon").click(function() {
+                    $("#end-date").datepicker("show");
+                });
+            });
+        </script>
+       
 </head>
 
 <body>
@@ -34,51 +53,51 @@
                         </div>
                         <p>Vàng - 42 hộp</p>
                     </div>
-                    <a class="flex hover:text-blue-500 px-4 py-2 items-center mb-2 rounded-md cursor-pointer bg-link"
-                        href="index.html">
+                    <a class="flex hover:text-blue-500 px-4 py-2 items-center mb-2 rounded-md cursor-pointer bg-link myLink"
+                        href="index.html" id="colorLink">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/dashboard1.png);"></div>
                         <p class="mx-3">Dashboard</p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="buy-combo.html">
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
+                        href="buy-combo.html" id="colorLink">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/moneyblack.png);"></div>
                         <p class="mx-3">Đơn hàng của tôi </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="withdraw.html">
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
+                        href="withdraw.html" id="colorLink">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/cash-withdrawa.png);">
                         </div>
                         <p class="mx-3">Lịch sử rút tiền </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link transition-all"
-                        href="commissions.html">
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink transition-all"
+                        href="commissions.html" id="colorLink">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/clock.png);"></div>
                         <p class="mx-3">Lịch sử hoa hồng </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="system.html">
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
+                        href="system.html" id="colorLink">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/group.png);"></div>
                         <p class="mx-3">Danh sách thành viên </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="affiliate.html">
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
+                        href="affiliate.html" id="colorLink">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/affiliate-marketing.png);">
                         </div>
                         <p class="mx-3">Tiếp thị liên kết</p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
-                        href="setting.html">
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
+                        href="setting.html" id="colorLink">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/setting.png);"></div>
                         <p class="mx-3">Cài đặt tài khoản</p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/log-out.png);"></div>
@@ -87,45 +106,45 @@
                 </div>
                 <div class="lg:hidden flex flex-col fixed bg-white sm:w-[80%] w-[70%] left-[-100%]  h-full top-0 "
                     id="menu">
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/moneyblack.png);"></div>
                         <p class="mx-3">Đơn hàng của tôi </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/cash-withdrawa.png);">
                         </div>
                         <p class="mx-3">Lịch sử rút tiền </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/clock.png);"></div>
                         <p class="mx-3">Lịch sử hoa hồng </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/group.png);"></div>
                         <p class="mx-3">Danh sách thành viên </p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/affiliate-marketing.png);">
                         </div>
                         <p class="mx-3">Tiếp thị liên kết</p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/setting.png);"></div>
                         <p class="mx-3">Cài đặt tài khoản</p>
                     </a>
-                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link tran"
+                    <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link myLink tran"
                         href="#">
                         <div class="bg-no-repeat bg-contain "
                             style="width: 22px; height: 22px; background-image: url(./image/log-out.png);"></div>
@@ -255,11 +274,16 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="lg:w-1/2 w-full px-[10px]">
-                                    <div class="flex items-center ">
-                                        <span class="search w-full">
-                                            <input type="date" placeholder="Tìm kiếm " class="rounded-sm">
-                                        </span>
+                                <div class="  lg:w-1/2 w-full px-[10px]">
+                                    <div class="lg:w-full sm:w-1/2 picker flex items-center border gap-[10px] rounded focus:border-[#3b82f6]">
+                                        
+                                            <input type="text" id="start-date" class="datepicker-input" placeholder="Ngày bắt đầu" >
+                                            <div class="bg-no-repeat bg-contain" style="background-image: url(./image/right-arrow.png); width: 16px; height: 16px;">
+
+                                            </div>
+                                            <input type="text" id="end-date" class="datepicker-input" placeholder="Ngày kết thúc" class="w-[30%]">
+                                            <span class="datepicker-icon" id="datepicker-icon">&#128197</span>
+                                        
 
                                     </div>
                                 </div>
@@ -275,8 +299,8 @@
                         <div class="overflow-x-auto table-scroll py-2 mx-2">
                             <table class="lg:w-[120%] w-[250%] table-auto border-collapse scrol " id="myTable">
                                 <tr>
-                                    <th></th>
-                                    <th>ID</th>
+                                    <th class="tablecell"></th>
+                                    <th class="tablecell">ID</th>
                                     <th>Tiền</th>
                                     <th>Điểm</th>
                                     <th>Loại giao dịch</th>
