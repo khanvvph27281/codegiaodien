@@ -85,6 +85,9 @@
                         <p class="mx-3">Đăng xuất</p>
                     </a>
                 </div>
+                <div class="rounded  w-full fixed left-0 top-0 bottom-0 right-0 overflow-auto z-0 bg-opacity-50 bg_form hidden"
+                    id="bgMenu">
+                </div>
                 <div class="lg:hidden flex flex-col fixed bg-white sm:w-[80%] w-[70%] left-[-100%]  h-full top-0 "
                     id="menu">
                     <a class="flex  hover:text-blue-500 px-4 py-2 items-center mb-2  rounded-md cursor-pointer bg-link"
@@ -134,7 +137,7 @@
                 </div>
 
                 <div class="lg:w-3/4 w-full ">
-                    <div class="lg:hidden flex justify-end
+                    <div class="lg:hidden flex justify-end mb-5
                     ">
                         <button class="px-2 py-1 border text-white bg-[#40a9ff] rounded " onclick="toggleMenu()"
                             id="overlay">menu</button>
@@ -149,12 +152,12 @@
 
 
                     </div>
-                    <div class="btn-tab">
-                        <button class="px-2 py-1 border rounded-md bg-gray-200 mr-3 tab-button" onclick="openTab('tab1')"
-                            id="tab-button">Danh sách nhóm 1</button>
-                        <button class="px-2 py-1 border rounded-md bg-gray-200 mr-3 tab-button" onclick="openTab('tab2')">Danh sách nhóm 2 </button>
-                        <button class="px-2 py-1 border rounded-md bg-gray-200 mr-3 tab-button" onclick="openTab('tab3')" >Danh sách nhóm 3</button>
+                    <div class="btn-tab flex items-center space-x-5 whitespace-nowrap overflow-x-auto mb-5 table-scroll">
+                        <button class="px-2 py-1 border rounded-md bg-gray-200 mr-3 tab-button" onclick="openTab('tab1')" id="tab-button">Danh sách nhóm 1</button>
+                        <button class="px-2 py-1 border rounded-md bg-gray-200 mr-3 tab-button" onclick="openTab('tab2')">Danh sách nhóm 2</button>
+                        <button class="px-2 py-1 border rounded-md bg-gray-200 mr-3 tab-button" onclick="openTab('tab3')">Danh sách nhóm 3</button>
                     </div>
+                    
                     <div class="border bg-[#ffffff] mt-5 p-3">
 
 
@@ -162,89 +165,90 @@
                             Tổng : 90,000,000đ
                         </div>
                         <div class="tab-content"  id="tab1">
-                            <table class="border border-collapse w-full table-ds "
-                                style="table-layout: auto;" >
-                                <tr>
-                                    <td>ID</td>
-                                    <td>Số điện thoại</td>
-                                    <td>Họ tên </td>
-                                    <td>Doanh số </td>
-                                    <td>Ngày tham gia </td>
-                                </tr>
-                                <tr>
-                                    <td>1825</td>
-                                    <td>0339115834</td>
-                                    <td>Nguyễn văn ab </td>
-                                    <td>345679đ</td>
-                                    <td>5/8/2022 - 08:00:00</td>
-                                </tr>
-                                <tr>
-                                    <td>1824</td>
-                                    <td>012345678</td>
-                                    <td>CDE</td>
-                                    <td>345679đ</td>
-                                    <td>5/8/2022 - 08:00:00</td>
-                                </tr>
-                                <tr>
-                                    <td>1824</td>
-                                    <td>012345678</td>
-                                    <td>CDE</td>
-                                    <td>345679đ</td>
-                                    <td>5/8/2022 - 08:00:00</td>
-                                </tr>
-                                <tr>
-                                    <td>1824</td>
-                                    <td>012345678</td>
-                                    <td>CDE</td>
-                                    <td>345679đ</td>
-                                    <td>5/8/2022 - 08:00:00</td>
-                                </tr>
-                            </table>
+                            <div class="overflow-x-auto table-scroll py-2 mx-2">
+                                <table class=" table-auto border-collapse scrol w-full table-ds " id="myTable">
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Số điện thoại</td>
+                                        <td>Họ tên </td>
+                                        <td>Doanh số </td>
+                                        <td>Ngày tham gia </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1825</td>
+                                        <td>0339115834</td>
+                                        <td>Nguyễn văn ab </td>
+                                        <td>345679đ</td>
+                                        <td>5/8/2022 - 08:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13333</td>
+                                        <td>034567890</td>
+                                        <td>Nguyễn  </td>
+                                        <td>3459đ</td>
+                                        <td>5/8/22 - 08:00:00</td>
+                                    </tr>
+                                    
+    
+                                </table>
+                            </div>
                         </div>
                         <div class="tab-content hidden" id="tab2">
-                             <table class="border border-collapse w-full table-ds "
-                                style="table-layout: auto;">
-                                <tr>
-                                    <td>ID</td>
-                                    <td>Số điện thoại</td>
-                                    <td>Họ tên </td>
-                                    <td>Doanh số </td>
-                                    <td>Ngày tham gia </td>
-                                </tr>
-                                <tr>
-                                    <td>1825</td>
-                                    <td>0339115834</td>
-                                    <td>Nguyễn văn ab </td>
-                                    <td>345679đ</td>
-                                    <td>5/8/2022 - 08:00:00</td>
-                                </tr>
-                                <tr>
-                                    <td>1824</td>
-                                    <td>012345678</td>
-                                    <td>CDE</td>
-                                    <td>345679đ</td>
-                                    <td>5/8/2022 - 08:00:00</td>
-                                </tr>
-                            </table>
+                            <div class="overflow-x-auto table-scroll py-2 mx-2">
+                                <table class=" table-auto border-collapse scrol w-full table-ds " id="myTable">
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Số điện thoại</td>
+                                        <td>Họ tên </td>
+                                        <td>Doanh số </td>
+                                        <td>Ngày tham gia </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1825</td>
+                                        <td>0339115834</td>
+                                        <td>Nguyễn văn ab </td>
+                                        <td>345679đ</td>
+                                        <td>5/8/2022 - 08:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1824</td>
+                                        <td>012345678</td>
+                                        <td>CDE</td>
+                                        <td>345679đ</td>
+                                        <td>5/8/2022 - 08:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1824</td>
+                                        <td>012345678</td>
+                                        <td>CDE</td>
+                                        <td>345679đ</td>
+                                        <td>5/8/2022 - 08:00:00</td>
+                                    </tr>
+    
+                                </table>
+                            </div>
                         </div>
                         <div class="tab-content hidden" id="tab3">
-                            <table class="border border-collapse w-full table-ds "
-                               style="table-layout: auto;">
-                               <tr>
-                                   <td>ID</td>
-                                   <td>Số điện thoại</td>
-                                   <td>Họ tên </td>
-                                   <td>Doanh số </td>
-                                   <td>Ngày tham gia </td>
-                               </tr>
-                               <tr>
-                                   <td>1825</td>
-                                   <td>0339115834</td>
-                                   <td>Nguyễn văn ab </td>
-                                   <td>345679đ</td>
-                                   <td>5/8/2022 - 08:00:00</td>
-                               </tr>
-                           </table>
+                            <div class="overflow-x-auto table-scroll py-2 mx-2">
+                                <table class=" table-auto border-collapse scrol w-full table-ds " id="myTable">
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>Số điện thoại</td>
+                                        <td>Họ tên </td>
+                                        <td>Doanh số </td>
+                                        <td>Ngày tham gia </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1825</td>
+                                        <td>0339115834</td>
+                                        <td>Nguyễn văn ab </td>
+                                        <td>345679đ</td>
+                                        <td>5/8/2022 - 08:00:00</td>
+                                    </tr>
+                                   
+    
+                                </table>
+                            </div>
                        </div>
 
                         <div class="pagination my-5">

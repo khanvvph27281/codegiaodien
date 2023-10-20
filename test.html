@@ -1,52 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng HTML và CSS</title>
     <style>
-        .datepicker-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .datepicker-input {
+        table {
             width: 100%;
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
+            border-collapse: collapse;
+            margin: 20px;
         }
 
-        .datepicker-icon {
-            cursor: pointer;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <div class="datepicker-container">
-        <input type="text" id="start-date" class="datepicker-input" placeholder="Ngày bắt đầu">
-        <input type="text" id="end-date" class="datepicker-input" placeholder="Ngày kết thúc">
-        <span class="datepicker-icon" id="datepicker-icon">&#128197</span>
-    </div>
-
-    <script>
-        $(document).ready(function() {
-            $("#start-date").datepicker();
-            $("#end-date").datepicker();
-
-            $("#datepicker-icon").click(function() {
-                $("#start-date").datepicker("show");
-            });
-            
-            $("#datepicker-icon").click(function() {
-                $("#end-date").datepicker("show");
-            });
-        });
-    </script>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Tuổi</th>
+                <th>Email</th>
+                <th>Tuổi</th>
+                <th>Email</th>
+                <th>Tuổi</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nguyễn Văn A</td>
+                <td>25</td>
+                <td>vana@example.com</td>
+                <td>Nguyễn Văn A</td>
+                <td>25</td>
+                <td>vana@example.com</td>
+                <td>vana@example.com</td>
+            </tr>
+            <tr>
+                <td>Trần Thị B</td>
+                <td>30</td>
+                <td>thib@example.com</td>
+                <td>Nguyễn Văn A</td>
+                <td>25</td>
+                <td>vana@example.com</td>
+                <td>vana@example.com</td>
+            </tr>
+            <tr>
+                <td>Lê Văn C</td>
+                <td>28</td>
+                <td>vanc@example.com</td>
+                <td>Nguyễn Văn A</td>
+                <td>25</td>
+                <td>vana@example.com</td>
+                <td>vana@example.com</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
+<div class="bg-no-repeat bg-contain" style="background-image: url(image/closee.png); width: 16px; height: 16px;">
+
+</div>

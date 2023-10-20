@@ -57,16 +57,36 @@ function changePage(page) {
 displayRows(currentPage);
 updatePagination();
 //menu
+
 function toggleMenu() {
   const menu = document.getElementById("menu");
-  menu.classList.toggle("menu-opened");
-
+  const bgMenu = document.getElementById("bgMenu");
   const overlay = document.getElementById("overlay");
-  overlay.style.display = menu.classList.contains("menu-opened");
+  overlay.addEventListener("click" , function(){
+    menu.classList.add("menu-opened");
+    bgMenu.classList.add("bg-opened");
+    overlay.innerHTML='<div class="bg-no-repeat bg-contain" style="background-image: url(image/closee.png); width: 16px; height: 16px;">';
+  })
+ 
+  bgMenu.addEventListener("click", function () {
+    bgMenu.classList.remove("menu-opened");
+    menu.classList.remove("bg-opened");
+    overlay.innerHTML = "Menu";
+  });
+ 
+  
+
+  // Thêm sự kiện click cho bgMenu để đóng menu
+  bgMenu.addEventListener("click", function () {
+    menu.classList.remove("menu-opened");
+    bgMenu.classList.remove("bg-opened");
+    overlay.innerHTML = "menu";
+  });
+
+
+  
+  
 }
-
-
-
 //tab
 function openTab(tabName) {
   var i;
@@ -77,7 +97,7 @@ function openTab(tabName) {
 
   document.getElementById(tabName).style.display = "block";
 }
-//copy 
+//copy
 function copyText() {
   var input = document.getElementById("CopyInput");
   input.select();
@@ -87,73 +107,7 @@ function copyText() {
   copyMessage.style.display = "block"; // Hiển thị thẻ div
 
   // Ẩn thẻ div sau 3 giây (3000 milliseconds)
-  setTimeout(function() {
-      copyMessage.style.display = "none";
+  setTimeout(function () {
+    copyMessage.style.display = "none";
   }, 3000);
 }
-
-//đặt hàng
-
-// const Click = document.querySelectorAll(".Click");
-// const iconRight = document.getElementById("icon-right");
-
-// let iconRightVisiba = false;
-
-// Click.addEventListener("click", function () {
-//   Click.classList.toggle("divList");
-//   if (iconRightVisiba) {
-//     iconRight.style.display = "none";
-//   } else {
-//     iconRight.style.display = "block";
-//   }
-
-//   // Cập nhật trạng thái hiển thị ảnh
-//   iconRightVisiba = !iconRightVisiba;
-// });
-// function dathang(){
-//   const ClickMua = document.querySelectorAll(".ClickMuahang");
-//   const iconRight = document.getElementById("icon-right");
-
-//   let selectedDiv = null;
-//   let isImageVisible = false;
-
-//   ClickMua.forEach((div) => {
-//     div.addEventListener("click", function () {
-//       if (selectedDiv) {
-//         selectedDiv.classList.remove("divList");
-//       }
-//       div.classList.add("divList");
-//       if (isImageVisible) {
-//             iconRight.style.display = "none";
-//           } else {
-//             iconRight.style.display = "block";
-//           }
-//       selectedDiv = div;
-//       isImageVisible = !isImageVisible;
-//     });
-//   });
-// }
-// dathang();
-//click đặt hàng
-// const datmua = document.getElementById("datmua");
-// const content = document.getElementById("content");
-
-// datmua.addEventListener("click", function (event) {
-//   event.stopPropagation();
-//   if (content.classList.contains("hidden")) {
-//     content.classList.remove("hidden");
-//   } else {
-//     content.classList.add("hidden");
-//   }
-// });
-
-// document.addEventListener("click", function (event) {
-//   if (!content.contains(event.target) && event.target !== datmua) {
-//     content.classList.add("hidden");
-//   }
-// });
-
-//show form
-// Lấy tham chiếu đến nút và lớp content
-
-
